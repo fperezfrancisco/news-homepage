@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | News homepage</title>
@@ -27,23 +33,137 @@
     </style>
   </head>
   <body>
-    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
+    <header class="topBar flex">
+      <div class="logoBox">
+        <img src="./assets/images/logo.svg" alt="W." class="logoImg" />
+      </div>
+      <nav class="navContainer">
+        <ul class="navList flex">
+          <li class="navLi"><a href="#" class="navLink">Home</a></li>
+          <li class="navLi"><a href="#" class="navLink">New</a></li>
+          <li class="navLi"><a href="#" class="navLink">Popular</a></li>
+          <li class="navLi"><a href="#" class="navLink">Trending</a></li>
+          <li class="navLi"><a href="#" class="navLink">Categories</a></li>
+        </ul>
+        <img
+          src="./assets/images/icon-menu.svg"
+          alt="icon-menu"
+          class="mobileMenu"
+        />
+      </nav>
+    </header>
+    <main class="siteContainer grid">
+      <div class="groupContainer heroGroup grid">
+        <div class="imgContainer mainImgContainer">
+          <picture class="web3Picture pictureContainer">
+            <source
+              media="(min-width: 480px)"
+              srcset="./assets/images/image-web-3-desktop.jpg"
+            />
+            <img
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt="web3 Image"
+            />
+          </picture>
+        </div>
+        <h1 class="largeTitle sectionTitle">The Bright Future of Web 3.0?</h1>
+        <p class="sectionPara mainPara">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fufilling its promise?
+        </p>
+        <button class="readMoreBtn">read more</button>
+      </div>
+      <div class="groupContainer asideGroup grid">
+        <h2 class="sectionTitle mediumTitle">New</h2>
+        <div class="asideArticle flex">
+          <a href="#" class="articleLink"
+            ><h3 class="smallTitle articleTitle">
+              Hydrogen VS Electric Cars
+            </h3></a
+          >
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+          <p class="subheading asideSubheading">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
+        <div class="asideArticle flex">
+          <a href="#" class="articleLink"
+            ><h3 class="smallTitle articleTitle">
+              The Downsides of AI Artistry
+            </h3></a
+          >
+
+          <p class="subheading asideSubheading">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="asideArticle flex">
+          <a href="#" class="articleLink"
+            ><h3 class="smallTitle articleTitle">
+              Is VC Funding Drying Up?
+            </h3></a
+          >
+          <p class="subheading asideSubheading">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+      <div class="groupContainer topArticles grid">
+        <div class="articleBox flex">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="Retro PC"
+            class="articleImg"
+          />
+          <div class="articleInfo flex">
+            <h2 class="rank">01</h2>
+            <a href="#" class="articleLink">
+              <h3 class="smallTitle articleTitle">Reviving Retro PCs</h3>
+            </a>
+
+            <p class="subheading">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="articleBox flex">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="Top laptops"
+            class="articleImg"
+          />
+          <div class="articleInfo flex">
+            <h2 class="rank">02</h2>
+            <a href="#" class="articleLink">
+              <h3 class="smallTitle articleTitle">Top 10 Laptops of 2022</h3>
+            </a>
+
+            <p class="subheading">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="articleBox flex">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="Gaming Growth"
+            class="articleImg"
+          />
+          <div class="articleInfo flex">
+            <h2 class="rank">03</h2>
+            <a href="#" class="articleLink">
+              <h3 class="smallTitle articleTitle">The Growth of Gaming</h3>
+            </a>
+
+            <p class="subheading">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
