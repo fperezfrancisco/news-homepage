@@ -33,6 +33,7 @@
     </style>
   </head>
   <body>
+    <div class="overlay"></div>
     <header class="topBar flex">
       <div class="logoBox">
         <img src="./assets/images/logo.svg" alt="W." class="logoImg" />
@@ -42,15 +43,39 @@
           <li class="navLi"><a href="#" class="navLink">Home</a></li>
           <li class="navLi"><a href="#new" class="navLink">New</a></li>
           <li class="navLi"><a href="#popular" class="navLink">Popular</a></li>
-          <li class="navLi"><a href="#" class="navLink">Trending</a></li>
+          <li class="navLi">
+            <a href="#trending" class="navLink">Trending</a>
+          </li>
           <li class="navLi"><a href="#" class="navLink">Categories</a></li>
         </ul>
         <img
           src="./assets/images/icon-menu.svg"
           alt="icon-menu"
-          class="mobileMenu"
+          class="menuOpen"
         />
       </nav>
+      <div class="mobileNav">
+        <img
+          src="./assets/images/icon-menu-close.svg"
+          alt="Close"
+          class="mobileCloseBtn"
+        />
+        <ul class="navList mobileNavList flex">
+          <li class="navLi"><a href="#" class="navLink mobileLink">Home</a></li>
+          <li class="navLi">
+            <a href="#new" class="navLink mobileLink">New</a>
+          </li>
+          <li class="navLi">
+            <a href="#popular" class="navLink mobileLink">Popular</a>
+          </li>
+          <li class="navLi">
+            <a href="#trending" class="navLink mobileLink">Trending</a>
+          </li>
+          <li class="navLi">
+            <a href="#" class="navLink mobileLink">Categories</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="siteContainer grid">
       <div class="groupContainer heroGroup grid">
@@ -167,5 +192,6 @@
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
