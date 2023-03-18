@@ -40,8 +40,8 @@
       <nav class="navContainer">
         <ul class="navList flex">
           <li class="navLi"><a href="#" class="navLink">Home</a></li>
-          <li class="navLi"><a href="#" class="navLink">New</a></li>
-          <li class="navLi"><a href="#" class="navLink">Popular</a></li>
+          <li class="navLi"><a href="#new" class="navLink">New</a></li>
+          <li class="navLi"><a href="#popular" class="navLink">Popular</a></li>
           <li class="navLi"><a href="#" class="navLink">Trending</a></li>
           <li class="navLi"><a href="#" class="navLink">Categories</a></li>
         </ul>
@@ -67,14 +67,16 @@
           </picture>
         </div>
         <h1 class="largeTitle sectionTitle">The Bright Future of Web 3.0?</h1>
-        <p class="sectionPara mainPara">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fufilling its promise?
-        </p>
-        <button class="readMoreBtn">read more</button>
+        <div class="sectionText">
+          <p class="sectionPara mainPara">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fufilling its promise?
+          </p>
+          <button class="readMoreBtn">read more</button>
+        </div>
       </div>
-      <div class="groupContainer asideGroup grid">
+      <div class="groupContainer asideGroup grid" id="new">
         <h2 class="sectionTitle mediumTitle">New</h2>
         <div class="asideArticle flex">
           <a href="#" class="articleLink"
@@ -111,7 +113,7 @@
           </p>
         </div>
       </div>
-      <div class="groupContainer topArticles grid">
+      <div class="groupContainer topArticles grid" id="popular">
         <div class="articleBox flex">
           <img
             src="./assets/images/image-retro-pcs.jpg"
